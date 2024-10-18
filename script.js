@@ -1,5 +1,5 @@
 window.addEventListener("keyup", event => {
-  if (event.ctrlKey && event.which === 81) {
+  if (event.ctrlKey && event.which === 192) {
     (function() {
       // Create a button
       var button = document.createElement('button');
