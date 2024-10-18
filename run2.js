@@ -1,10 +1,9 @@
+/// execute_script.js
 window.addEventListener("keyup", event => {
-  if (event.ctrlKey && event.which === 192) {
-    let code = prompt("Run Code:");
-    if (code.startsWith("javascript:")) {
-      code = code.substring(11);
-    }
-    eval(code);
-    alert('test')
+  // Check if the key released is 'q' (key code 81)
+  // and if the backtick key (key code 192) is also pressed
+  if (event.which === 81 && event.ctrlKey) {
+    let code = prompt("Enter a message:");
+    alert(code);
   }
 });
