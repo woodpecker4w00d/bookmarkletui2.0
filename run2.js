@@ -1,8 +1,8 @@
 /// execute_script.js
 window.addEventListener("keyup", event => {
-  // Check if the key released is 'q' (key code 81)
-  // and if the backtick key (key code 192) is also pressed
-  if (event.which === 81 && event.ctrlKey) {
+  // Check if the key released is '`' (key code 192)
+  // and if the shift key is also pressed
+  if (event.which === 192 && event.shiftKey) {
     let code = prompt("Enter a message:");
     alert(code);
   }
