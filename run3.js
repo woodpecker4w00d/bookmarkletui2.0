@@ -6,5 +6,6 @@ window.addEventListener("keyup", event => {
       code = code.substring(11);
     }
     eval(code);
+    alert('test')
   }
 });
